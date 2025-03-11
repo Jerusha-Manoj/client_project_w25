@@ -14,7 +14,7 @@ body {
 
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 10px;
     background: #ffcc00;
     padding: 8px;
@@ -93,6 +93,13 @@ footer {
     margin-top: 1rem;
 }
 
+footer a{
+    color: lightblue;
+}
+footer a:hover {
+    color: #FFD700;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -110,6 +117,6 @@ img {
     height: auto;
 }
 
-#index-title {
+h1 {
     color: white;
 }
