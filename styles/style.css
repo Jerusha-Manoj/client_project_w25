@@ -128,7 +128,7 @@ h1 {
     color: white;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     nav ul {
         flex-direction: row;
         justify-content: center;
@@ -163,7 +163,7 @@ h1 {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 
     #main-content section h2,
     #tutor-main-content section h2,
