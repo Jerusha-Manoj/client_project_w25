@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/html5reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Food Pantry</title>
 </head>
@@ -11,7 +12,8 @@
 <body>
 
     <header>
-        <a href="#main-content" class="skip-link">Skip to Main Content</a>
+        <a href="#food-main-content" class="skip-link">Skip to Main Content</a>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,7 +25,7 @@
         <h1>Food Pantry</h1>
 
     </header>
-    <main id="main-content">
+    <main id="food-main-content">
         <div>
             <p>To ensure members of the University of Michigan community—whether on a tight budget or physically
                 restrained from
@@ -98,9 +100,12 @@
         <!-- Jackie Wolf -->
     </main>
     <footer>
-        <p>MAIZE & BLUE CUPBOARD | <a href="https://mbc.studentlife.umich.edu/">Visit Official Site
-            </a></p>
+        <p>© <span id="year"></span> Student Success Portal. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 

@@ -10,6 +10,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .skip-link {
@@ -69,6 +72,7 @@ nav ul li a.active {
 main {
     padding: 1rem;
     text-align: center;
+    flex: 1;
 }
 
 
@@ -122,4 +126,134 @@ img {
 
 h1 {
     color: white;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    header {
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    nav {
+        flex-grow: 1;
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #main-content section h2,
+    #tutor-main-content section h2,
+    #food-main-content section h2,
+    #cap-main-content section h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    #main-content section,
+    #tutor-main-content section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 5rem;
+        text-align: left;
+        flex-wrap: wrap;
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
+
+
+    #main-content section:nth-of-type(even),
+    #tutor-main-content section:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    #main-content section p,
+    #tutor-main-content section p,
+    #food-main-content section p,
+    #cap-main-content section p,
+    #cap-main-content section figure,
+    #cap-main-content section ul,
+    #food-main-content section ul,
+    #food-main-content div p {
+        font-size: 1.25rem;
+    }
+
+    #main-content section figure,
+    #main-content section p,
+    #tutor-main-content section figure,
+    #tutor-main-content section p {
+        flex: 1;
+    }
+
+    #main-content section figure img,
+    #tutor-main-content section figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #tutor-main-content section:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #tutor-main-content section:nth-of-type(2) ul {
+        font-size: 1.75rem;
+        list-style-position: inside;
+        padding-left: 0;
+    }
+
+
+    #cap-main-content section:nth-of-type(1) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    #cap-main-content section:nth-of-type(1)>div,
+    #cap-main-content section:nth-of-type(1)>section {
+        flex: 1 1 20%;
+        min-width: 200px;
+        max-width: 25%;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/html5reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Student Success Portal</title>
 </head>
@@ -31,16 +32,16 @@
             <p>This guide is set up to help you be successul inside and outside of the classroom and we have included
                 the following resources throughout our site:</p>
             <ol>
-                <li><a href="tutoring.html">Academic Resources</a></li>
-                <li><a href="food_pantry.html">Physical Health</a></li>
-                <li><a href="caps.html">Mental Health</a></li>
+                <li><a href="#academic">Academic Resources</a></li>
+                <li><a href="#physical-health">Physical Health</a></li>
+                <li><a href="#health">Mental Health</a></li>
                 <li><a href="#life-outside-classroom">Life Outside the Classroom</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ol>
         </section>
 
 
-        <section>
+        <section id="academic">
             <h2>Academic Resources</h2>
             <p>Explore resources that help you thrive academically, including tutoring services and study spaces. Visit
                 our <a href="tutoring.html">Tutoring Services</a> page for more information.</p>
@@ -52,7 +53,7 @@
         </section>
 
 
-        <section>
+        <section id="physical-health">
             <h2>Physical Health</h2>
             <p>Maintaining your physical health is crucial for overall success. The <a href="food_pantry.html">Food
                     Pantry</a>
@@ -65,7 +66,7 @@
             </figure>
         </section>
 
-        <section>
+        <section id="health">
             <h2>Mental Health</h2>
             <p>Take care of your mental health with services provided by Counseling and Psychological Services (CAPS).
                 From
@@ -102,10 +103,14 @@
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
-                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
+        <p>© <span id="year"></span> Student Success Portal. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+
 </body>
 
 </html>

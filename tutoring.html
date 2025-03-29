@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/html5reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Tutoring</title>
 </head>
@@ -11,7 +12,8 @@
 <body>
 
     <header>
-        <a href="#main-content" class="skip-link">Skip to Main Content</a>
+        <a href="#tutor-main-content" class="skip-link">Skip to Main Content</a>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,10 +22,10 @@
                 <li><a href="caps.html">CAPS</a></li>
             </ul>
         </nav>
-        <h1>Academic Suport at UMSI</h1>
+        <h1>Academic Support</h1>
 
     </header>
-    <main id="main-content">
+    <main id="tutor-main-content">
         <div>
             <section>
                 <h2>About Tutoring Services</h2>
@@ -36,6 +38,7 @@
                     From one-on-one sessions to group workshops, we provide the resources you need to excel in your
                     studies.</p>
             </section>
+
 
             <section>
                 <h2>WHAT WE PROVIDE</h2>
@@ -64,7 +67,7 @@
 
             <section>
                 <h2>Connect with an Advisor</h2>
-                <p><a
+                <p>If you would like to connect with an advisor, make an appointment by clicking this link: <a
                         href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/connecting-with-an-advisor?authuser=0">Make
                         an
                         Appointment</a></p>
@@ -76,16 +79,12 @@
         </div>
     </main>
     <footer>
-        <p>
-            MSI Academic Advising |
-            <a href="mailto:umsi.advising.msi@umich.edu">umsi.advising.msi@umich.edu</a>
-        </p>
-        <p>
-            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" target="_blank">
-                Visit the Academic Advising Website
-            </a>
-        </p>
+        <p>© <span id="year"></span> Student Success Portal. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 
